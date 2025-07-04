@@ -1,28 +1,89 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f8f8f8;
-    color: #333;
+/* --- Navigation --- */
+.site-nav {
+  background: #222;
+  padding: 10px 0;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.site-nav li + li {
+  margin-left: 20px;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.site-nav a.active,
+.site-nav a:hover {
+  text-decoration: underline;
 }
 
-header {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* --- Hero Section --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f0f0f0;
+}
+.hero-text {
+  max-width: 500px;
+}
+.hero-text h1 {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+.subhead {
+  color: #555;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.contact-line a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 40px;
 }
 
-nav a {
-    color: #ddd;
-    margin: 0 10px;
-    text-decoration: none;
+/* --- Intro --- */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+.intro h2 {
+  margin-bottom: 15px;
+}
+.intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* --- Quick Links --- */
+.quick-links {
+  text-align: center;
+  padding-bottom: 60px;
 }
-
-main {
-    padding: 20px;
+.btn {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #0077cc;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.9;
 }
